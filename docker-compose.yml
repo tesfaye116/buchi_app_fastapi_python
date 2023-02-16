@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    env_file:
+      - .env
+    command: bash -c "python3 app/main.py"
+    volumes:
+      - .:/app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:latest
+    env_file:
+      - .env
+    ports:
+      - "27017:27017"
+    environment:
+      - "MONGO_INITDB_URL=${DATABASE_URL}"
+      - "MONGO_INITDB_DATABASE=${MONGO_INITDB_DATABASE}"
+      - "MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}"
+      - "MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}"
+    command:
+      mongod --quiet --logpath /dev/null
