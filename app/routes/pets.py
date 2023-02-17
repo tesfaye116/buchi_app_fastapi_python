@@ -1,17 +1,19 @@
 import pathlib
+from sched import scheduler
 import shutil
+import time
 from typing import List, Any, Optional
 from fastapi import File, Form, APIRouter, UploadFile
 from fastapi.responses import JSONResponse
 from fastapi.encoders import jsonable_encoder
 from app.config.config import Settings
+from app.database.database import get_collection
 
 import requests
 
-
-from app.database.database import get_collection
-
 from app.models.Pet import PetSchema
+
+
 
 router = APIRouter()
 
@@ -19,6 +21,38 @@ settings = Settings()
 
 
 url = "https://api.petfinder.com/v2/animals"
+
+
+access_token_list = []
+
+# if access token is expired, get a new one from the petfinder api and save it to the .env file
+
+
+def get_access_token():
+    url_auth = "https://api.petfinder.com/v2/oauth2/token"
+
+    payload = 'grant_type=client_credentials&client_id=' + \
+        settings.API_KEY + '&client_secret=' + settings.SECRET
+    headers = {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    }
+
+    response = requests.request(
+        "POST", url_auth, headers=headers, data=payload, verify=False)
+
+    response = response.json()
+
+    if response["access_token"]:
+        access_token = response["access_token"]
+        access_token_list.clear()
+        access_token_list.append(access_token)
+        return access_token_list
+    else:
+        return access_token_list
+
+
+# get the access token from the petfinder api
+get_access_token()
 
 
 # create pet route with form data and file upload
@@ -38,7 +72,7 @@ async def create_pet(
         size=size,
         age=age,
         goodWithChildren=goodWithChildren,
-        photos=["http://localhost:8080/static/" +
+        photos=["http://localhost:8000/static/" +
                 photo.filename for photo in photos],
     )
 
@@ -46,9 +80,7 @@ async def create_pet(
     await get_collection("pets").insert_one(new_pet)
 
     # create a directory for the pet
-    pathlib.Path(__file__).parent.absolute().joinpath(
-        f"../static").mkdir(parents=True, exist_ok=True)
-
+    pathlib.Path(f"static").mkdir(parents=True, exist_ok=True)
 
     # save the files to the directory
     for photo in photos:
@@ -79,13 +111,13 @@ async def get_pets(type: Optional[str] = None, gender: Optional[str] = None, siz
     # search from petfinder api
     payload = {}
     headers = {
-        'Authorization': 'Bearer ' + settings.ACCESS_TOKEN
+        'Authorization': 'Bearer ' + access_token_list[0]
     }
 
-    #parameters for the api
+    # parameters for the api
     params = {
-        'type': type ,
-        'gender':gender,
+        'type': type,
+        'gender': gender,
         'size': size,
         'age': age,
         'goodWithChildren': goodWithChildren,
@@ -93,15 +125,15 @@ async def get_pets(type: Optional[str] = None, gender: Optional[str] = None, siz
     }
 
     response = requests.request(
-        "GET", url, headers=headers, data=payload, params=params)
+        "GET", url, headers=headers, data=payload, params=params, verify=False)
 
     # convert the response to json
     response = response.json()
 
     try:
-        response = response["animals"] 
+        response = response["animals"]
     except:
-        response= response["title"]
+        response = response["title"]
 
     # create a list to store the pets
     pet_list_db = []
@@ -116,7 +148,6 @@ async def get_pets(type: Optional[str] = None, gender: Optional[str] = None, siz
             pet_list_api.append(response)
         else:
             pet_list_api.append(pet)
-
 
     # return the list of pets
     try:
@@ -142,7 +173,3 @@ async def get_pet(pet_id: str):
         return JSONResponse(status_code=200, content={"status": "success", "pet_detail": 'No pet found'})
     else:
         return JSONResponse(status_code=400, content={"status": "error"})
-
-
-
-

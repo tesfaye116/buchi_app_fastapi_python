@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 services:
   web:
@@ -24,5 +24,4 @@ services:
       - "MONGO_INITDB_DATABASE=${MONGO_INITDB_DATABASE}"
       - "MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}"
       - "MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}"
-    command:
-      mongod --quiet --logpath /dev/null
+    command: mongod --quiet --logpath /dev/null

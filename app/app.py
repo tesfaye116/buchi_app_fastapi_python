@@ -23,3 +23,6 @@ app.include_router(ReportRouter, tags=["Report"], prefix="/api/v1/generateReport
 @app.get("/", tags=["Root"])
 async def read_root():
     return {"message": "Welcome to Buchi's Pet Adoption API, Made with ❤️ by Tesfaye Girma"}
+
+
+
