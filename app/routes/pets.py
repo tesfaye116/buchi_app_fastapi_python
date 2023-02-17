@@ -4,15 +4,14 @@ from typing import List, Any, Optional
 from fastapi import File, Form, APIRouter, UploadFile
 from fastapi.responses import JSONResponse
 from fastapi.encoders import jsonable_encoder
-from config.config import Settings
+from app.config.config import Settings
 
 import requests
-import json
 
 
-from database.database import get_collection
+from app.database.database import get_collection
 
-from models.Pet import PetSchema
+from app.models.Pet import PetSchema
 
 router = APIRouter()
 
@@ -47,7 +46,9 @@ async def create_pet(
     await get_collection("pets").insert_one(new_pet)
 
     # create a directory for the pet
-    pathlib.Path(f"static").mkdir(parents=True, exist_ok=True)
+    pathlib.Path(__file__).parent.absolute().joinpath(
+        f"../static").mkdir(parents=True, exist_ok=True)
+
 
     # save the files to the directory
     for photo in photos:

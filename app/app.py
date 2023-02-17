@@ -1,9 +1,8 @@
 from fastapi import FastAPI
-
-from routes.pets import router as PetsRouter
-from routes.customers import router as CustomersRouter
-from routes.adopt import router as AdoptsRouter
-from routes.report import router as ReportRouter
+from app.routes.pets import router as PetsRouter
+from app.routes.customers import router as CustomersRouter
+from app.routes.adopt import router as AdoptsRouter
+from app.routes.report import router as ReportRouter
 
 from fastapi.staticfiles import StaticFiles
 

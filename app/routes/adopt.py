@@ -2,10 +2,10 @@ from typing import Any, Optional
 from fastapi import APIRouter
 from fastapi.responses import JSONResponse
 from fastapi.encoders import jsonable_encoder
-from database.database import get_collection
+from app.database.database import get_collection
 import datetime
 
-from models.Adopt import AdoptSchema
+from app.models.Adopt import AdoptSchema
 
 
 router = APIRouter()

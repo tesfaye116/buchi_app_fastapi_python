@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Body
-from database.database import get_collection
-from models.Customer import CustomerSchema
+from app.database.database import get_collection
+from app.models.Customer import CustomerSchema
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 

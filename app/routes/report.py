@@ -3,7 +3,7 @@ from typing import Any, Optional
 from fastapi import APIRouter
 from fastapi.responses import JSONResponse
 from fastapi.encoders import jsonable_encoder
-from database.database import get_collection
+from app.database.database import get_collection
 
 
 router = APIRouter()

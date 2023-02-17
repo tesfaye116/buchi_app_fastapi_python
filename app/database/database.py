@@ -1,4 +1,4 @@
-from config.config import Settings
+from app.config.config import Settings
 import motor.motor_asyncio
 
 

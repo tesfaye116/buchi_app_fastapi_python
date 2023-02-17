@@ -1,0 +1,1261 @@
+[2023-02-17 10:45:05 +0300] [95202] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/buchi_app.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app.app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f05b4e8b5b0>
+  on_reload: <function OnReload.on_reload at 0x7f05b4e8b6d0>
+  when_ready: <function WhenReady.when_ready at 0x7f05b4e8b7f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f05b4e8b910>
+  post_fork: <function Postfork.post_fork at 0x7f05b4e8ba30>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f05b4e8bb50>
+  worker_int: <function WorkerInt.worker_int at 0x7f05b4e8bc70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f05b4e8bd90>
+  pre_exec: <function PreExec.pre_exec at 0x7f05b4e8beb0>
+  pre_request: <function PreRequest.pre_request at 0x7f05b4eac040>
+  post_request: <function PostRequest.post_request at 0x7f05b4eac0d0>
+  child_exit: <function ChildExit.child_exit at 0x7f05b4eac1f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f05b4eac310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f05b4eac430>
+  on_exit: <function OnExit.on_exit at 0x7f05b4eac550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-02-17 10:45:05 +0300] [95202] [INFO] Starting gunicorn 20.1.0
+[2023-02-17 10:45:05 +0300] [95202] [DEBUG] Arbiter booted
+[2023-02-17 10:45:05 +0300] [95202] [INFO] Listening at: unix:/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/buchi_app.sock (95202)
+[2023-02-17 10:45:05 +0300] [95202] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-02-17 10:45:05 +0300] [95208] [INFO] Booting worker with pid: 95208
+[2023-02-17 10:45:05 +0300] [95209] [INFO] Booting worker with pid: 95209
+[2023-02-17 10:45:05 +0300] [95210] [INFO] Booting worker with pid: 95210
+[2023-02-17 10:45:05 +0300] [95211] [INFO] Booting worker with pid: 95211
+[2023-02-17 10:45:06 +0300] [95202] [DEBUG] 5 workers
+[2023-02-17 10:45:06 +0300] [95213] [INFO] Booting worker with pid: 95213
+[2023-02-17 10:45:06 +0300] [95209] [INFO] Started server process [95209]
+[2023-02-17 10:45:06 +0300] [95209] [INFO] Waiting for application startup.
+[2023-02-17 10:45:06 +0300] [95209] [INFO] Application startup complete.
+[2023-02-17 10:45:06 +0300] [95211] [INFO] Started server process [95211]
+[2023-02-17 10:45:06 +0300] [95211] [INFO] Waiting for application startup.
+[2023-02-17 10:45:06 +0300] [95211] [INFO] Application startup complete.
+[2023-02-17 10:45:06 +0300] [95210] [INFO] Started server process [95210]
+[2023-02-17 10:45:06 +0300] [95210] [INFO] Waiting for application startup.
+[2023-02-17 10:45:06 +0300] [95210] [INFO] Application startup complete.
+[2023-02-17 10:45:06 +0300] [95213] [INFO] Started server process [95213]
+[2023-02-17 10:45:06 +0300] [95208] [INFO] Started server process [95208]
+[2023-02-17 10:45:06 +0300] [95208] [INFO] Waiting for application startup.
+[2023-02-17 10:45:06 +0300] [95213] [INFO] Waiting for application startup.
+[2023-02-17 10:45:06 +0300] [95208] [INFO] Application startup complete.
+[2023-02-17 10:45:06 +0300] [95213] [INFO] Application startup complete.
+[2023-02-17 11:26:20 +0300] [95202] [INFO] Handling signal: term
+[2023-02-17 11:26:20 +0300] [95210] [INFO] Shutting down
+[2023-02-17 11:26:20 +0300] [95213] [INFO] Shutting down
+[2023-02-17 11:26:20 +0300] [95209] [INFO] Shutting down
+[2023-02-17 11:26:20 +0300] [95211] [INFO] Shutting down
+[2023-02-17 11:26:20 +0300] [95208] [INFO] Shutting down
+[2023-02-17 11:26:20 +0300] [95209] [INFO] Waiting for application shutdown.
+[2023-02-17 11:26:20 +0300] [95210] [INFO] Waiting for application shutdown.
+[2023-02-17 11:26:20 +0300] [95213] [INFO] Waiting for application shutdown.
+[2023-02-17 11:26:20 +0300] [95209] [INFO] Application shutdown complete.
+[2023-02-17 11:26:20 +0300] [95210] [INFO] Application shutdown complete.
+[2023-02-17 11:26:20 +0300] [95213] [INFO] Application shutdown complete.
+[2023-02-17 11:26:20 +0300] [95213] [INFO] Finished server process [95213]
+[2023-02-17 11:26:20 +0300] [95210] [INFO] Finished server process [95210]
+[2023-02-17 11:26:20 +0300] [95209] [INFO] Finished server process [95209]
+[2023-02-17 11:26:20 +0300] [95211] [INFO] Waiting for application shutdown.
+[2023-02-17 11:26:20 +0300] [95211] [INFO] Application shutdown complete.
+[2023-02-17 11:26:20 +0300] [95211] [INFO] Finished server process [95211]
+[2023-02-17 11:26:20 +0300] [95209] [INFO] Worker exiting (pid: 95209)
+[2023-02-17 11:26:20 +0300] [95210] [INFO] Worker exiting (pid: 95210)
+[2023-02-17 11:26:20 +0300] [95213] [INFO] Worker exiting (pid: 95213)
+[2023-02-17 11:26:20 +0300] [95208] [INFO] Waiting for application shutdown.
+[2023-02-17 11:26:20 +0300] [95208] [INFO] Application shutdown complete.
+[2023-02-17 11:26:20 +0300] [95211] [INFO] Worker exiting (pid: 95211)
+[2023-02-17 11:26:20 +0300] [95208] [INFO] Finished server process [95208]
+[2023-02-17 11:26:20 +0300] [95208] [INFO] Worker exiting (pid: 95208)
+[2023-02-17 11:28:18 +0300] [126343] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/buchi_app.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app.app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f3a15cef5b0>
+  on_reload: <function OnReload.on_reload at 0x7f3a15cef6d0>
+  when_ready: <function WhenReady.when_ready at 0x7f3a15cef7f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f3a15cef910>
+  post_fork: <function Postfork.post_fork at 0x7f3a15cefa30>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f3a15cefb50>
+  worker_int: <function WorkerInt.worker_int at 0x7f3a15cefc70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f3a15cefd90>
+  pre_exec: <function PreExec.pre_exec at 0x7f3a15cefeb0>
+  pre_request: <function PreRequest.pre_request at 0x7f3a15d10040>
+  post_request: <function PostRequest.post_request at 0x7f3a15d100d0>
+  child_exit: <function ChildExit.child_exit at 0x7f3a15d101f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f3a15d10310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f3a15d10430>
+  on_exit: <function OnExit.on_exit at 0x7f3a15d10550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-02-17 11:28:18 +0300] [126343] [INFO] Starting gunicorn 20.1.0
+[2023-02-17 11:28:18 +0300] [126343] [DEBUG] Arbiter booted
+[2023-02-17 11:28:18 +0300] [126343] [INFO] Listening at: unix:/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/buchi_app.sock (126343)
+[2023-02-17 11:28:18 +0300] [126343] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-02-17 11:28:18 +0300] [126347] [INFO] Booting worker with pid: 126347
+[2023-02-17 11:28:18 +0300] [126348] [INFO] Booting worker with pid: 126348
+[2023-02-17 11:28:18 +0300] [126349] [INFO] Booting worker with pid: 126349
+[2023-02-17 11:28:18 +0300] [126350] [INFO] Booting worker with pid: 126350
+[2023-02-17 11:28:19 +0300] [126360] [INFO] Booting worker with pid: 126360
+[2023-02-17 11:28:19 +0300] [126343] [DEBUG] 5 workers
+[2023-02-17 11:28:19 +0300] [126348] [INFO] Started server process [126348]
+[2023-02-17 11:28:19 +0300] [126348] [INFO] Waiting for application startup.
+[2023-02-17 11:28:19 +0300] [126348] [INFO] Application startup complete.
+[2023-02-17 11:28:19 +0300] [126347] [INFO] Started server process [126347]
+[2023-02-17 11:28:19 +0300] [126347] [INFO] Waiting for application startup.
+[2023-02-17 11:28:19 +0300] [126347] [INFO] Application startup complete.
+[2023-02-17 11:28:19 +0300] [126349] [INFO] Started server process [126349]
+[2023-02-17 11:28:19 +0300] [126349] [INFO] Waiting for application startup.
+[2023-02-17 11:28:19 +0300] [126349] [INFO] Application startup complete.
+[2023-02-17 11:28:19 +0300] [126360] [INFO] Started server process [126360]
+[2023-02-17 11:28:19 +0300] [126360] [INFO] Waiting for application startup.
+[2023-02-17 11:28:19 +0300] [126360] [INFO] Application startup complete.
+[2023-02-17 11:28:19 +0300] [126350] [INFO] Started server process [126350]
+[2023-02-17 11:28:19 +0300] [126350] [INFO] Waiting for application startup.
+[2023-02-17 11:28:19 +0300] [126350] [INFO] Application startup complete.
+[2023-02-17 11:41:15 +0300] [126343] [INFO] Handling signal: term
+[2023-02-17 11:41:15 +0300] [126348] [INFO] Shutting down
+[2023-02-17 11:41:15 +0300] [126349] [INFO] Shutting down
+[2023-02-17 11:41:15 +0300] [126360] [INFO] Shutting down
+[2023-02-17 11:41:15 +0300] [126350] [INFO] Shutting down
+[2023-02-17 11:41:15 +0300] [126347] [INFO] Shutting down
+[2023-02-17 11:41:15 +0300] [126349] [INFO] Waiting for application shutdown.
+[2023-02-17 11:41:15 +0300] [126349] [INFO] Application shutdown complete.
+[2023-02-17 11:41:15 +0300] [126349] [INFO] Finished server process [126349]
+[2023-02-17 11:41:15 +0300] [126348] [INFO] Waiting for application shutdown.
+[2023-02-17 11:41:15 +0300] [126348] [INFO] Application shutdown complete.
+[2023-02-17 11:41:15 +0300] [126348] [INFO] Finished server process [126348]
+[2023-02-17 11:41:15 +0300] [126347] [INFO] Waiting for application shutdown.
+[2023-02-17 11:41:15 +0300] [126360] [INFO] Waiting for application shutdown.
+[2023-02-17 11:41:15 +0300] [126350] [INFO] Waiting for application shutdown.
+[2023-02-17 11:41:15 +0300] [126360] [INFO] Application shutdown complete.
+[2023-02-17 11:41:15 +0300] [126360] [INFO] Finished server process [126360]
+[2023-02-17 11:41:15 +0300] [126350] [INFO] Application shutdown complete.
+[2023-02-17 11:41:15 +0300] [126350] [INFO] Finished server process [126350]
+[2023-02-17 11:41:15 +0300] [126348] [INFO] Worker exiting (pid: 126348)
+[2023-02-17 11:41:15 +0300] [126360] [INFO] Worker exiting (pid: 126360)
+[2023-02-17 11:41:15 +0300] [126350] [INFO] Worker exiting (pid: 126350)
+[2023-02-17 11:41:15 +0300] [126349] [INFO] Worker exiting (pid: 126349)
+[2023-02-17 11:41:15 +0300] [126347] [INFO] Application shutdown complete.
+[2023-02-17 11:41:15 +0300] [126347] [INFO] Finished server process [126347]
+[2023-02-17 11:41:15 +0300] [126347] [INFO] Worker exiting (pid: 126347)
+[2023-02-17 11:41:57 +0300] [136246] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/bin/buchi_app.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app.app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fd442df35b0>
+  on_reload: <function OnReload.on_reload at 0x7fd442df36d0>
+  when_ready: <function WhenReady.when_ready at 0x7fd442df37f0>
+  pre_fork: <function Prefork.pre_fork at 0x7fd442df3910>
+  post_fork: <function Postfork.post_fork at 0x7fd442df3a30>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fd442df3b50>
+  worker_int: <function WorkerInt.worker_int at 0x7fd442df3c70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fd442df3d90>
+  pre_exec: <function PreExec.pre_exec at 0x7fd442df3eb0>
+  pre_request: <function PreRequest.pre_request at 0x7fd442e14040>
+  post_request: <function PostRequest.post_request at 0x7fd442e140d0>
+  child_exit: <function ChildExit.child_exit at 0x7fd442e141f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fd442e14310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fd442e14430>
+  on_exit: <function OnExit.on_exit at 0x7fd442e14550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-02-17 11:41:57 +0300] [136246] [INFO] Starting gunicorn 20.1.0
+[2023-02-17 11:41:57 +0300] [136246] [DEBUG] Arbiter booted
+[2023-02-17 11:41:57 +0300] [136246] [INFO] Listening at: unix:/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/bin/buchi_app.sock (136246)
+[2023-02-17 11:41:57 +0300] [136246] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-02-17 11:41:57 +0300] [136261] [INFO] Booting worker with pid: 136261
+[2023-02-17 11:41:57 +0300] [136262] [INFO] Booting worker with pid: 136262
+[2023-02-17 11:41:57 +0300] [136263] [INFO] Booting worker with pid: 136263
+[2023-02-17 11:41:57 +0300] [136264] [INFO] Booting worker with pid: 136264
+[2023-02-17 11:41:57 +0300] [136265] [INFO] Booting worker with pid: 136265
+[2023-02-17 11:41:57 +0300] [136246] [DEBUG] 5 workers
+[2023-02-17 11:41:57 +0300] [136265] [INFO] Started server process [136265]
+[2023-02-17 11:41:57 +0300] [136263] [INFO] Started server process [136263]
+[2023-02-17 11:41:57 +0300] [136265] [INFO] Waiting for application startup.
+[2023-02-17 11:41:57 +0300] [136262] [INFO] Started server process [136262]
+[2023-02-17 11:41:57 +0300] [136262] [INFO] Waiting for application startup.
+[2023-02-17 11:41:57 +0300] [136265] [INFO] Application startup complete.
+[2023-02-17 11:41:57 +0300] [136262] [INFO] Application startup complete.
+[2023-02-17 11:41:57 +0300] [136263] [INFO] Waiting for application startup.
+[2023-02-17 11:41:57 +0300] [136263] [INFO] Application startup complete.
+[2023-02-17 11:41:57 +0300] [136264] [INFO] Started server process [136264]
+[2023-02-17 11:41:57 +0300] [136264] [INFO] Waiting for application startup.
+[2023-02-17 11:41:57 +0300] [136261] [INFO] Started server process [136261]
+[2023-02-17 11:41:57 +0300] [136264] [INFO] Application startup complete.
+[2023-02-17 11:41:57 +0300] [136261] [INFO] Waiting for application startup.
+[2023-02-17 11:41:57 +0300] [136261] [INFO] Application startup complete.
+[2023-02-17 11:46:43 +0300] [140062] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/bin/buchi_app.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app.app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f8bcbd575b0>
+  on_reload: <function OnReload.on_reload at 0x7f8bcbd576d0>
+  when_ready: <function WhenReady.when_ready at 0x7f8bcbd577f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f8bcbd57910>
+  post_fork: <function Postfork.post_fork at 0x7f8bcbd57a30>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f8bcbd57b50>
+  worker_int: <function WorkerInt.worker_int at 0x7f8bcbd57c70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f8bcbd57d90>
+  pre_exec: <function PreExec.pre_exec at 0x7f8bcbd57eb0>
+  pre_request: <function PreRequest.pre_request at 0x7f8bcbd74040>
+  post_request: <function PostRequest.post_request at 0x7f8bcbd740d0>
+  child_exit: <function ChildExit.child_exit at 0x7f8bcbd741f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f8bcbd74310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f8bcbd74430>
+  on_exit: <function OnExit.on_exit at 0x7f8bcbd74550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-02-17 11:46:43 +0300] [140062] [INFO] Starting gunicorn 20.1.0
+[2023-02-17 11:46:43 +0300] [140062] [DEBUG] Arbiter booted
+[2023-02-17 11:46:43 +0300] [140062] [INFO] Listening at: unix:/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/bin/buchi_app.sock (140062)
+[2023-02-17 11:46:43 +0300] [140062] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-02-17 11:46:43 +0300] [140063] [INFO] Booting worker with pid: 140063
+[2023-02-17 11:46:43 +0300] [140065] [INFO] Booting worker with pid: 140065
+[2023-02-17 11:46:43 +0300] [140066] [INFO] Booting worker with pid: 140066
+[2023-02-17 11:46:43 +0300] [140067] [INFO] Booting worker with pid: 140067
+[2023-02-17 11:46:43 +0300] [140068] [INFO] Booting worker with pid: 140068
+[2023-02-17 11:46:43 +0300] [140062] [DEBUG] 5 workers
+[2023-02-17 11:46:43 +0300] [140066] [INFO] Started server process [140066]
+[2023-02-17 11:46:43 +0300] [140066] [INFO] Waiting for application startup.
+[2023-02-17 11:46:43 +0300] [140068] [INFO] Started server process [140068]
+[2023-02-17 11:46:43 +0300] [140068] [INFO] Waiting for application startup.
+[2023-02-17 11:46:43 +0300] [140066] [INFO] Application startup complete.
+[2023-02-17 11:46:43 +0300] [140068] [INFO] Application startup complete.
+[2023-02-17 11:46:43 +0300] [140063] [INFO] Started server process [140063]
+[2023-02-17 11:46:43 +0300] [140063] [INFO] Waiting for application startup.
+[2023-02-17 11:46:43 +0300] [140063] [INFO] Application startup complete.
+[2023-02-17 11:46:43 +0300] [140065] [INFO] Started server process [140065]
+[2023-02-17 11:46:43 +0300] [140065] [INFO] Waiting for application startup.
+[2023-02-17 11:46:43 +0300] [140065] [INFO] Application startup complete.
+[2023-02-17 11:46:43 +0300] [140067] [INFO] Started server process [140067]
+[2023-02-17 11:46:43 +0300] [140067] [INFO] Waiting for application startup.
+[2023-02-17 11:46:43 +0300] [140067] [INFO] Application startup complete.
+[2023-02-17 11:47:31 +0300] [140062] [INFO] Handling signal: int
+[2023-02-17 11:47:31 +0300] [140063] [INFO] Shutting down
+[2023-02-17 11:47:31 +0300] [140068] [INFO] Shutting down
+[2023-02-17 11:47:31 +0300] [140066] [INFO] Shutting down
+[2023-02-17 11:47:31 +0300] [140065] [INFO] Shutting down
+[2023-02-17 11:47:31 +0300] [140067] [INFO] Shutting down
+[2023-02-17 11:47:31 +0300] [140068] [INFO] Waiting for application shutdown.
+[2023-02-17 11:47:31 +0300] [140063] [INFO] Waiting for application shutdown.
+[2023-02-17 11:47:31 +0300] [140068] [INFO] Application shutdown complete.
+[2023-02-17 11:47:31 +0300] [140063] [INFO] Application shutdown complete.
+[2023-02-17 11:47:31 +0300] [140063] [INFO] Finished server process [140063]
+[2023-02-17 11:47:31 +0300] [140068] [INFO] Finished server process [140068]
+[2023-02-17 11:47:31 +0300] [140066] [INFO] Waiting for application shutdown.
+[2023-02-17 11:47:31 +0300] [140066] [INFO] Application shutdown complete.
+[2023-02-17 11:47:31 +0300] [140066] [INFO] Finished server process [140066]
+[2023-02-17 11:47:31 +0300] [140063] [INFO] Worker exiting (pid: 140063)
+[2023-02-17 11:47:31 +0300] [140068] [INFO] Worker exiting (pid: 140068)
+[2023-02-17 11:47:31 +0300] [140066] [INFO] Worker exiting (pid: 140066)
+[2023-02-17 11:47:31 +0300] [140067] [INFO] Waiting for application shutdown.
+[2023-02-17 11:47:31 +0300] [140065] [INFO] Waiting for application shutdown.
+[2023-02-17 11:47:31 +0300] [140067] [INFO] Application shutdown complete.
+[2023-02-17 11:47:31 +0300] [140065] [INFO] Application shutdown complete.
+[2023-02-17 11:47:31 +0300] [140067] [INFO] Finished server process [140067]
+[2023-02-17 11:47:31 +0300] [140065] [INFO] Finished server process [140065]
+[2023-02-17 11:47:31 +0300] [140065] [INFO] Worker exiting (pid: 140065)
+[2023-02-17 11:47:31 +0300] [140067] [INFO] Worker exiting (pid: 140067)
+[2023-02-17 11:47:31 +0300] [140062] [INFO] Shutting down: Master
+[2023-02-17 11:47:41 +0300] [140727] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/bin/buchi_app.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app.app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fda228675b0>
+  on_reload: <function OnReload.on_reload at 0x7fda228676d0>
+  when_ready: <function WhenReady.when_ready at 0x7fda228677f0>
+  pre_fork: <function Prefork.pre_fork at 0x7fda22867910>
+  post_fork: <function Postfork.post_fork at 0x7fda22867a30>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fda22867b50>
+  worker_int: <function WorkerInt.worker_int at 0x7fda22867c70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fda22867d90>
+  pre_exec: <function PreExec.pre_exec at 0x7fda22867eb0>
+  pre_request: <function PreRequest.pre_request at 0x7fda22884040>
+  post_request: <function PostRequest.post_request at 0x7fda228840d0>
+  child_exit: <function ChildExit.child_exit at 0x7fda228841f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fda22884310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fda22884430>
+  on_exit: <function OnExit.on_exit at 0x7fda22884550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-02-17 11:47:41 +0300] [140727] [INFO] Starting gunicorn 20.1.0
+[2023-02-17 11:47:41 +0300] [140727] [DEBUG] Arbiter booted
+[2023-02-17 11:47:41 +0300] [140727] [INFO] Listening at: unix:/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/bin/buchi_app.sock (140727)
+[2023-02-17 11:47:41 +0300] [140727] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-02-17 11:47:41 +0300] [140728] [INFO] Booting worker with pid: 140728
+[2023-02-17 11:47:41 +0300] [140729] [INFO] Booting worker with pid: 140729
+[2023-02-17 11:47:41 +0300] [140730] [INFO] Booting worker with pid: 140730
+[2023-02-17 11:47:41 +0300] [140731] [INFO] Booting worker with pid: 140731
+[2023-02-17 11:47:41 +0300] [140732] [INFO] Booting worker with pid: 140732
+[2023-02-17 11:47:41 +0300] [140727] [DEBUG] 5 workers
+[2023-02-17 11:47:41 +0300] [140728] [INFO] Started server process [140728]
+[2023-02-17 11:47:41 +0300] [140728] [INFO] Waiting for application startup.
+[2023-02-17 11:47:41 +0300] [140728] [INFO] Application startup complete.
+[2023-02-17 11:47:41 +0300] [140731] [INFO] Started server process [140731]
+[2023-02-17 11:47:41 +0300] [140731] [INFO] Waiting for application startup.
+[2023-02-17 11:47:41 +0300] [140731] [INFO] Application startup complete.
+[2023-02-17 11:47:41 +0300] [140729] [INFO] Started server process [140729]
+[2023-02-17 11:47:41 +0300] [140729] [INFO] Waiting for application startup.
+[2023-02-17 11:47:41 +0300] [140729] [INFO] Application startup complete.
+[2023-02-17 11:47:41 +0300] [140730] [INFO] Started server process [140730]
+[2023-02-17 11:47:41 +0300] [140730] [INFO] Waiting for application startup.
+[2023-02-17 11:47:41 +0300] [140730] [INFO] Application startup complete.
+[2023-02-17 11:47:41 +0300] [140732] [INFO] Started server process [140732]
+[2023-02-17 11:47:41 +0300] [140732] [INFO] Waiting for application startup.
+[2023-02-17 11:47:41 +0300] [140732] [INFO] Application startup complete.
+[2023-02-17 11:47:48 +0300] [140727] [INFO] Handling signal: winch
+[2023-02-17 11:47:48 +0300] [140727] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:47:48 +0300] [140727] [INFO] Handling signal: winch
+[2023-02-17 11:47:48 +0300] [140727] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:47:55 +0300] [140727] [INFO] Handling signal: winch
+[2023-02-17 11:47:55 +0300] [140727] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:47:55 +0300] [140727] [INFO] Handling signal: winch
+[2023-02-17 11:47:55 +0300] [140727] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:47:56 +0300] [140727] [INFO] Handling signal: int
+[2023-02-17 11:47:56 +0300] [140730] [INFO] Shutting down
+[2023-02-17 11:47:56 +0300] [140728] [INFO] Shutting down
+[2023-02-17 11:47:56 +0300] [140732] [INFO] Shutting down
+[2023-02-17 11:47:56 +0300] [140729] [INFO] Shutting down
+[2023-02-17 11:47:56 +0300] [140731] [INFO] Shutting down
+[2023-02-17 11:47:56 +0300] [140730] [INFO] Waiting for application shutdown.
+[2023-02-17 11:47:56 +0300] [140730] [INFO] Application shutdown complete.
+[2023-02-17 11:47:56 +0300] [140730] [INFO] Finished server process [140730]
+[2023-02-17 11:47:56 +0300] [140730] [INFO] Worker exiting (pid: 140730)
+[2023-02-17 11:47:56 +0300] [140728] [INFO] Waiting for application shutdown.
+[2023-02-17 11:47:56 +0300] [140728] [INFO] Application shutdown complete.
+[2023-02-17 11:47:56 +0300] [140728] [INFO] Finished server process [140728]
+[2023-02-17 11:47:56 +0300] [140728] [INFO] Worker exiting (pid: 140728)
+[2023-02-17 11:47:56 +0300] [140732] [INFO] Waiting for application shutdown.
+[2023-02-17 11:47:56 +0300] [140732] [INFO] Application shutdown complete.
+[2023-02-17 11:47:56 +0300] [140732] [INFO] Finished server process [140732]
+[2023-02-17 11:47:56 +0300] [140732] [INFO] Worker exiting (pid: 140732)
+[2023-02-17 11:47:56 +0300] [140729] [INFO] Waiting for application shutdown.
+[2023-02-17 11:47:56 +0300] [140731] [INFO] Waiting for application shutdown.
+[2023-02-17 11:47:56 +0300] [140729] [INFO] Application shutdown complete.
+[2023-02-17 11:47:56 +0300] [140731] [INFO] Application shutdown complete.
+[2023-02-17 11:47:56 +0300] [140729] [INFO] Finished server process [140729]
+[2023-02-17 11:47:56 +0300] [140731] [INFO] Finished server process [140731]
+[2023-02-17 11:47:56 +0300] [140729] [INFO] Worker exiting (pid: 140729)
+[2023-02-17 11:47:56 +0300] [140731] [INFO] Worker exiting (pid: 140731)
+[2023-02-17 11:47:56 +0300] [140727] [INFO] Shutting down: Master
+[2023-02-17 11:48:01 +0300] [140987] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/bin/buchi_app.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f2da30335b0>
+  on_reload: <function OnReload.on_reload at 0x7f2da30336d0>
+  when_ready: <function WhenReady.when_ready at 0x7f2da30337f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f2da3033910>
+  post_fork: <function Postfork.post_fork at 0x7f2da3033a30>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f2da3033b50>
+  worker_int: <function WorkerInt.worker_int at 0x7f2da3033c70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f2da3033d90>
+  pre_exec: <function PreExec.pre_exec at 0x7f2da3033eb0>
+  pre_request: <function PreRequest.pre_request at 0x7f2da3050040>
+  post_request: <function PostRequest.post_request at 0x7f2da30500d0>
+  child_exit: <function ChildExit.child_exit at 0x7f2da30501f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f2da3050310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f2da3050430>
+  on_exit: <function OnExit.on_exit at 0x7f2da3050550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-02-17 11:48:01 +0300] [140987] [INFO] Starting gunicorn 20.1.0
+[2023-02-17 11:48:01 +0300] [140987] [DEBUG] Arbiter booted
+[2023-02-17 11:48:01 +0300] [140987] [INFO] Listening at: unix:/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/bin/buchi_app.sock (140987)
+[2023-02-17 11:48:01 +0300] [140987] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-02-17 11:48:01 +0300] [140988] [INFO] Booting worker with pid: 140988
+[2023-02-17 11:48:01 +0300] [140988] [DEBUG] Exception while loading the application
+Traceback (most recent call last):
+  File "/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/lib/python3.10/site-packages/gunicorn/util.py", line 402, in import_app
+    app = getattr(mod, name)
+AttributeError: module 'app' has no attribute 'app'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/lib/python3.10/site-packages/uvicorn/workers.py", line 66, in init_process
+    super(UvicornWorker, self).init_process()
+  File "/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/lib/python3.10/site-packages/gunicorn/util.py", line 406, in import_app
+    raise AppImportError("Failed to find attribute %r in %r." % (name, module))
+gunicorn.errors.AppImportError: Failed to find attribute 'app' in 'app'.
+[2023-02-17 11:48:01 +0300] [140988] [INFO] Worker exiting (pid: 140988)
+[2023-02-17 11:48:01 +0300] [140987] [INFO] Shutting down: Master
+[2023-02-17 11:48:01 +0300] [140987] [INFO] Reason: App failed to load.
+[2023-02-17 11:48:09 +0300] [141080] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/bin/buchi_app.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app.app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f1b9c50b5b0>
+  on_reload: <function OnReload.on_reload at 0x7f1b9c50b6d0>
+  when_ready: <function WhenReady.when_ready at 0x7f1b9c50b7f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f1b9c50b910>
+  post_fork: <function Postfork.post_fork at 0x7f1b9c50ba30>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f1b9c50bb50>
+  worker_int: <function WorkerInt.worker_int at 0x7f1b9c50bc70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f1b9c50bd90>
+  pre_exec: <function PreExec.pre_exec at 0x7f1b9c50beb0>
+  pre_request: <function PreRequest.pre_request at 0x7f1b9c528040>
+  post_request: <function PostRequest.post_request at 0x7f1b9c5280d0>
+  child_exit: <function ChildExit.child_exit at 0x7f1b9c5281f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f1b9c528310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f1b9c528430>
+  on_exit: <function OnExit.on_exit at 0x7f1b9c528550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-02-17 11:48:09 +0300] [141080] [INFO] Starting gunicorn 20.1.0
+[2023-02-17 11:48:09 +0300] [141080] [DEBUG] Arbiter booted
+[2023-02-17 11:48:09 +0300] [141080] [INFO] Listening at: unix:/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/env/bin/buchi_app.sock (141080)
+[2023-02-17 11:48:09 +0300] [141080] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-02-17 11:48:09 +0300] [141081] [INFO] Booting worker with pid: 141081
+[2023-02-17 11:48:09 +0300] [141082] [INFO] Booting worker with pid: 141082
+[2023-02-17 11:48:09 +0300] [141083] [INFO] Booting worker with pid: 141083
+[2023-02-17 11:48:09 +0300] [141084] [INFO] Booting worker with pid: 141084
+[2023-02-17 11:48:09 +0300] [141085] [INFO] Booting worker with pid: 141085
+[2023-02-17 11:48:09 +0300] [141080] [DEBUG] 5 workers
+[2023-02-17 11:48:10 +0300] [141084] [INFO] Started server process [141084]
+[2023-02-17 11:48:10 +0300] [141084] [INFO] Waiting for application startup.
+[2023-02-17 11:48:10 +0300] [141081] [INFO] Started server process [141081]
+[2023-02-17 11:48:10 +0300] [141081] [INFO] Waiting for application startup.
+[2023-02-17 11:48:10 +0300] [141082] [INFO] Started server process [141082]
+[2023-02-17 11:48:10 +0300] [141084] [INFO] Application startup complete.
+[2023-02-17 11:48:10 +0300] [141082] [INFO] Waiting for application startup.
+[2023-02-17 11:48:10 +0300] [141081] [INFO] Application startup complete.
+[2023-02-17 11:48:10 +0300] [141082] [INFO] Application startup complete.
+[2023-02-17 11:48:10 +0300] [141085] [INFO] Started server process [141085]
+[2023-02-17 11:48:10 +0300] [141085] [INFO] Waiting for application startup.
+[2023-02-17 11:48:10 +0300] [141085] [INFO] Application startup complete.
+[2023-02-17 11:48:10 +0300] [141083] [INFO] Started server process [141083]
+[2023-02-17 11:48:10 +0300] [141083] [INFO] Waiting for application startup.
+[2023-02-17 11:48:10 +0300] [141083] [INFO] Application startup complete.
+[2023-02-17 11:48:12 +0300] [141080] [INFO] Handling signal: winch
+[2023-02-17 11:48:12 +0300] [141080] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:48:12 +0300] [141080] [INFO] Handling signal: winch
+[2023-02-17 11:48:12 +0300] [141080] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:48:46 +0300] [141080] [INFO] Handling signal: int
+[2023-02-17 11:48:46 +0300] [141082] [INFO] Shutting down
+[2023-02-17 11:48:46 +0300] [141081] [INFO] Shutting down
+[2023-02-17 11:48:46 +0300] [141084] [INFO] Shutting down
+[2023-02-17 11:48:46 +0300] [141085] [INFO] Shutting down
+[2023-02-17 11:48:47 +0300] [141083] [INFO] Shutting down
+[2023-02-17 11:48:47 +0300] [141084] [INFO] Waiting for application shutdown.
+[2023-02-17 11:48:47 +0300] [141082] [INFO] Waiting for application shutdown.
+[2023-02-17 11:48:47 +0300] [141081] [INFO] Waiting for application shutdown.
+[2023-02-17 11:48:47 +0300] [141084] [INFO] Application shutdown complete.
+[2023-02-17 11:48:47 +0300] [141082] [INFO] Application shutdown complete.
+[2023-02-17 11:48:47 +0300] [141081] [INFO] Application shutdown complete.
+[2023-02-17 11:48:47 +0300] [141084] [INFO] Finished server process [141084]
+[2023-02-17 11:48:47 +0300] [141082] [INFO] Finished server process [141082]
+[2023-02-17 11:48:47 +0300] [141081] [INFO] Finished server process [141081]
+[2023-02-17 11:48:47 +0300] [141084] [INFO] Worker exiting (pid: 141084)
+[2023-02-17 11:48:47 +0300] [141081] [INFO] Worker exiting (pid: 141081)
+[2023-02-17 11:48:47 +0300] [141082] [INFO] Worker exiting (pid: 141082)
+[2023-02-17 11:48:47 +0300] [141085] [INFO] Waiting for application shutdown.
+[2023-02-17 11:48:47 +0300] [141085] [INFO] Application shutdown complete.
+[2023-02-17 11:48:47 +0300] [141085] [INFO] Finished server process [141085]
+[2023-02-17 11:48:47 +0300] [141085] [INFO] Worker exiting (pid: 141085)
+[2023-02-17 11:48:47 +0300] [141083] [INFO] Waiting for application shutdown.
+[2023-02-17 11:48:47 +0300] [141083] [INFO] Application shutdown complete.
+[2023-02-17 11:48:47 +0300] [141083] [INFO] Finished server process [141083]
+[2023-02-17 11:48:47 +0300] [141083] [INFO] Worker exiting (pid: 141083)
+[2023-02-17 11:48:47 +0300] [141080] [INFO] Shutting down: Master
+[2023-02-17 11:50:23 +0300] [142803] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/buchi_app.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app.app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f4f9a7d35b0>
+  on_reload: <function OnReload.on_reload at 0x7f4f9a7d36d0>
+  when_ready: <function WhenReady.when_ready at 0x7f4f9a7d37f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f4f9a7d3910>
+  post_fork: <function Postfork.post_fork at 0x7f4f9a7d3a30>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f4f9a7d3b50>
+  worker_int: <function WorkerInt.worker_int at 0x7f4f9a7d3c70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f4f9a7d3d90>
+  pre_exec: <function PreExec.pre_exec at 0x7f4f9a7d3eb0>
+  pre_request: <function PreRequest.pre_request at 0x7f4f9a7f0040>
+  post_request: <function PostRequest.post_request at 0x7f4f9a7f00d0>
+  child_exit: <function ChildExit.child_exit at 0x7f4f9a7f01f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f4f9a7f0310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f4f9a7f0430>
+  on_exit: <function OnExit.on_exit at 0x7f4f9a7f0550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-02-17 11:50:23 +0300] [142803] [INFO] Starting gunicorn 20.1.0
+[2023-02-17 11:50:23 +0300] [142803] [DEBUG] Arbiter booted
+[2023-02-17 11:50:23 +0300] [142803] [INFO] Listening at: unix:/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/buchi_app.sock (142803)
+[2023-02-17 11:50:23 +0300] [142803] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-02-17 11:50:23 +0300] [142804] [INFO] Booting worker with pid: 142804
+[2023-02-17 11:50:24 +0300] [142814] [INFO] Booting worker with pid: 142814
+[2023-02-17 11:50:24 +0300] [142815] [INFO] Booting worker with pid: 142815
+[2023-02-17 11:50:24 +0300] [142816] [INFO] Booting worker with pid: 142816
+[2023-02-17 11:50:24 +0300] [142803] [DEBUG] 5 workers
+[2023-02-17 11:50:24 +0300] [142817] [INFO] Booting worker with pid: 142817
+[2023-02-17 11:50:24 +0300] [142815] [INFO] Started server process [142815]
+[2023-02-17 11:50:24 +0300] [142815] [INFO] Waiting for application startup.
+[2023-02-17 11:50:24 +0300] [142815] [INFO] Application startup complete.
+[2023-02-17 11:50:24 +0300] [142814] [INFO] Started server process [142814]
+[2023-02-17 11:50:24 +0300] [142814] [INFO] Waiting for application startup.
+[2023-02-17 11:50:24 +0300] [142814] [INFO] Application startup complete.
+[2023-02-17 11:50:24 +0300] [142817] [INFO] Started server process [142817]
+[2023-02-17 11:50:24 +0300] [142817] [INFO] Waiting for application startup.
+[2023-02-17 11:50:24 +0300] [142817] [INFO] Application startup complete.
+[2023-02-17 11:50:24 +0300] [142816] [INFO] Started server process [142816]
+[2023-02-17 11:50:24 +0300] [142816] [INFO] Waiting for application startup.
+[2023-02-17 11:50:24 +0300] [142816] [INFO] Application startup complete.
+[2023-02-17 11:50:24 +0300] [142804] [INFO] Started server process [142804]
+[2023-02-17 11:50:24 +0300] [142804] [INFO] Waiting for application startup.
+[2023-02-17 11:50:24 +0300] [142804] [INFO] Application startup complete.
+[2023-02-17 11:50:31 +0300] [142803] [INFO] Handling signal: winch
+[2023-02-17 11:50:31 +0300] [142803] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:50:31 +0300] [142803] [INFO] Handling signal: winch
+[2023-02-17 11:50:31 +0300] [142803] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:50:51 +0300] [142803] [INFO] Handling signal: winch
+[2023-02-17 11:50:51 +0300] [142803] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:50:51 +0300] [142803] [INFO] Handling signal: winch
+[2023-02-17 11:50:51 +0300] [142803] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:50:52 +0300] [142803] [INFO] Handling signal: int
+[2023-02-17 11:50:52 +0300] [142815] [INFO] Shutting down
+[2023-02-17 11:50:52 +0300] [142814] [INFO] Shutting down
+[2023-02-17 11:50:52 +0300] [142817] [INFO] Shutting down
+[2023-02-17 11:50:52 +0300] [142804] [INFO] Shutting down
+[2023-02-17 11:50:52 +0300] [142816] [INFO] Shutting down
+[2023-02-17 11:50:52 +0300] [142814] [INFO] Waiting for application shutdown.
+[2023-02-17 11:50:52 +0300] [142815] [INFO] Waiting for application shutdown.
+[2023-02-17 11:50:52 +0300] [142815] [INFO] Application shutdown complete.
+[2023-02-17 11:50:52 +0300] [142814] [INFO] Application shutdown complete.
+[2023-02-17 11:50:52 +0300] [142815] [INFO] Finished server process [142815]
+[2023-02-17 11:50:52 +0300] [142814] [INFO] Finished server process [142814]
+[2023-02-17 11:50:52 +0300] [142814] [INFO] Worker exiting (pid: 142814)
+[2023-02-17 11:50:52 +0300] [142815] [INFO] Worker exiting (pid: 142815)
+[2023-02-17 11:50:52 +0300] [142817] [INFO] Waiting for application shutdown.
+[2023-02-17 11:50:52 +0300] [142804] [INFO] Waiting for application shutdown.
+[2023-02-17 11:50:52 +0300] [142804] [INFO] Application shutdown complete.
+[2023-02-17 11:50:52 +0300] [142817] [INFO] Application shutdown complete.
+[2023-02-17 11:50:52 +0300] [142804] [INFO] Finished server process [142804]
+[2023-02-17 11:50:52 +0300] [142817] [INFO] Finished server process [142817]
+[2023-02-17 11:50:52 +0300] [142804] [INFO] Worker exiting (pid: 142804)
+[2023-02-17 11:50:52 +0300] [142817] [INFO] Worker exiting (pid: 142817)
+[2023-02-17 11:50:52 +0300] [142816] [INFO] Waiting for application shutdown.
+[2023-02-17 11:50:52 +0300] [142816] [INFO] Application shutdown complete.
+[2023-02-17 11:50:52 +0300] [142816] [INFO] Finished server process [142816]
+[2023-02-17 11:50:52 +0300] [142816] [INFO] Worker exiting (pid: 142816)
+[2023-02-17 11:50:52 +0300] [142803] [INFO] Shutting down: Master
+[2023-02-17 11:50:55 +0300] [143198] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/buchi_app.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app.app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f8d26b4b5b0>
+  on_reload: <function OnReload.on_reload at 0x7f8d26b4b6d0>
+  when_ready: <function WhenReady.when_ready at 0x7f8d26b4b7f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f8d26b4b910>
+  post_fork: <function Postfork.post_fork at 0x7f8d26b4ba30>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f8d26b4bb50>
+  worker_int: <function WorkerInt.worker_int at 0x7f8d26b4bc70>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f8d26b4bd90>
+  pre_exec: <function PreExec.pre_exec at 0x7f8d26b4beb0>
+  pre_request: <function PreRequest.pre_request at 0x7f8d26b68040>
+  post_request: <function PostRequest.post_request at 0x7f8d26b680d0>
+  child_exit: <function ChildExit.child_exit at 0x7f8d26b681f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f8d26b68310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f8d26b68430>
+  on_exit: <function OnExit.on_exit at 0x7f8d26b68550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-02-17 11:50:55 +0300] [143198] [INFO] Starting gunicorn 20.1.0
+[2023-02-17 11:50:55 +0300] [143198] [DEBUG] Arbiter booted
+[2023-02-17 11:50:55 +0300] [143198] [INFO] Listening at: unix:/home/hope/Documents/Projects/Python_Project/buchi_app_fastapi/buchi_app.sock (143198)
+[2023-02-17 11:50:55 +0300] [143198] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-02-17 11:50:55 +0300] [143199] [INFO] Booting worker with pid: 143199
+[2023-02-17 11:50:55 +0300] [143200] [INFO] Booting worker with pid: 143200
+[2023-02-17 11:50:55 +0300] [143201] [INFO] Booting worker with pid: 143201
+[2023-02-17 11:50:55 +0300] [143202] [INFO] Booting worker with pid: 143202
+[2023-02-17 11:50:55 +0300] [143203] [INFO] Booting worker with pid: 143203
+[2023-02-17 11:50:56 +0300] [143198] [DEBUG] 5 workers
+[2023-02-17 11:50:56 +0300] [143200] [INFO] Started server process [143200]
+[2023-02-17 11:50:56 +0300] [143200] [INFO] Waiting for application startup.
+[2023-02-17 11:50:56 +0300] [143200] [INFO] Application startup complete.
+[2023-02-17 11:50:56 +0300] [143199] [INFO] Started server process [143199]
+[2023-02-17 11:50:56 +0300] [143199] [INFO] Waiting for application startup.
+[2023-02-17 11:50:56 +0300] [143199] [INFO] Application startup complete.
+[2023-02-17 11:50:56 +0300] [143202] [INFO] Started server process [143202]
+[2023-02-17 11:50:56 +0300] [143202] [INFO] Waiting for application startup.
+[2023-02-17 11:50:56 +0300] [143202] [INFO] Application startup complete.
+[2023-02-17 11:50:56 +0300] [143201] [INFO] Started server process [143201]
+[2023-02-17 11:50:56 +0300] [143201] [INFO] Waiting for application startup.
+[2023-02-17 11:50:56 +0300] [143201] [INFO] Application startup complete.
+[2023-02-17 11:50:56 +0300] [143203] [INFO] Started server process [143203]
+[2023-02-17 11:50:56 +0300] [143203] [INFO] Waiting for application startup.
+[2023-02-17 11:50:56 +0300] [143203] [INFO] Application startup complete.
+[2023-02-17 11:51:20 +0300] [143198] [INFO] Handling signal: winch
+[2023-02-17 11:51:20 +0300] [143198] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:51:20 +0300] [143198] [INFO] Handling signal: winch
+[2023-02-17 11:51:20 +0300] [143198] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:51:55 +0300] [143198] [INFO] Handling signal: winch
+[2023-02-17 11:51:55 +0300] [143198] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:51:55 +0300] [143198] [INFO] Handling signal: winch
+[2023-02-17 11:51:55 +0300] [143198] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:52:32 +0300] [143198] [INFO] Handling signal: winch
+[2023-02-17 11:52:32 +0300] [143198] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:52:32 +0300] [143198] [INFO] Handling signal: winch
+[2023-02-17 11:52:32 +0300] [143198] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:52:40 +0300] [143198] [INFO] Handling signal: winch
+[2023-02-17 11:52:40 +0300] [143198] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:52:40 +0300] [143198] [INFO] Handling signal: winch
+[2023-02-17 11:52:40 +0300] [143198] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:53:19 +0300] [143198] [INFO] Handling signal: winch
+[2023-02-17 11:53:19 +0300] [143198] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:53:19 +0300] [143198] [INFO] Handling signal: winch
+[2023-02-17 11:53:19 +0300] [143198] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-02-17 11:53:22 +0300] [143198] [INFO] Handling signal: int
+[2023-02-17 11:53:22 +0300] [143201] [INFO] Shutting down
+[2023-02-17 11:53:22 +0300] [143203] [INFO] Shutting down
+[2023-02-17 11:53:22 +0300] [143199] [INFO] Shutting down
+[2023-02-17 11:53:22 +0300] [143200] [INFO] Shutting down
+[2023-02-17 11:53:22 +0300] [143202] [INFO] Shutting down
+[2023-02-17 11:53:22 +0300] [143200] [INFO] Waiting for application shutdown.
+[2023-02-17 11:53:22 +0300] [143201] [INFO] Waiting for application shutdown.
+[2023-02-17 11:53:22 +0300] [143203] [INFO] Waiting for application shutdown.
+[2023-02-17 11:53:22 +0300] [143199] [INFO] Waiting for application shutdown.
+[2023-02-17 11:53:22 +0300] [143200] [INFO] Application shutdown complete.
+[2023-02-17 11:53:22 +0300] [143201] [INFO] Application shutdown complete.
+[2023-02-17 11:53:22 +0300] [143199] [INFO] Application shutdown complete.
+[2023-02-17 11:53:22 +0300] [143203] [INFO] Application shutdown complete.
+[2023-02-17 11:53:22 +0300] [143200] [INFO] Finished server process [143200]
+[2023-02-17 11:53:22 +0300] [143199] [INFO] Finished server process [143199]
+[2023-02-17 11:53:22 +0300] [143201] [INFO] Finished server process [143201]
+[2023-02-17 11:53:22 +0300] [143203] [INFO] Finished server process [143203]
+[2023-02-17 11:53:22 +0300] [143203] [INFO] Worker exiting (pid: 143203)
+[2023-02-17 11:53:22 +0300] [143199] [INFO] Worker exiting (pid: 143199)
+[2023-02-17 11:53:22 +0300] [143201] [INFO] Worker exiting (pid: 143201)
+[2023-02-17 11:53:22 +0300] [143200] [INFO] Worker exiting (pid: 143200)
+[2023-02-17 11:53:22 +0300] [143202] [INFO] Waiting for application shutdown.
+[2023-02-17 11:53:22 +0300] [143202] [INFO] Application shutdown complete.
+[2023-02-17 11:53:22 +0300] [143202] [INFO] Finished server process [143202]
+[2023-02-17 11:53:22 +0300] [143202] [INFO] Worker exiting (pid: 143202)
+[2023-02-17 11:53:22 +0300] [143198] [INFO] Shutting down: Master
+[2023-02-17 11:59:00 +0300] [136246] [INFO] Handling signal: term
+[2023-02-17 11:59:00 +0300] [136262] [INFO] Shutting down
+[2023-02-17 11:59:00 +0300] [136264] [INFO] Shutting down
+[2023-02-17 11:59:00 +0300] [136263] [INFO] Shutting down
+[2023-02-17 11:59:00 +0300] [136265] [INFO] Shutting down
+[2023-02-17 11:59:00 +0300] [136261] [INFO] Shutting down
+[2023-02-17 11:59:00 +0300] [136264] [INFO] Waiting for application shutdown.
+[2023-02-17 11:59:00 +0300] [136262] [INFO] Waiting for application shutdown.
+[2023-02-17 11:59:00 +0300] [136265] [INFO] Waiting for application shutdown.
+[2023-02-17 11:59:00 +0300] [136263] [INFO] Waiting for application shutdown.
+[2023-02-17 11:59:00 +0300] [136265] [INFO] Application shutdown complete.
+[2023-02-17 11:59:00 +0300] [136262] [INFO] Application shutdown complete.
+[2023-02-17 11:59:00 +0300] [136261] [INFO] Waiting for application shutdown.
+[2023-02-17 11:59:00 +0300] [136265] [INFO] Finished server process [136265]
+[2023-02-17 11:59:00 +0300] [136262] [INFO] Finished server process [136262]
+[2023-02-17 11:59:00 +0300] [136263] [INFO] Application shutdown complete.
+[2023-02-17 11:59:00 +0300] [136263] [INFO] Finished server process [136263]
+[2023-02-17 11:59:00 +0300] [136261] [INFO] Application shutdown complete.
+[2023-02-17 11:59:00 +0300] [136261] [INFO] Finished server process [136261]
+[2023-02-17 11:59:00 +0300] [136262] [INFO] Worker exiting (pid: 136262)
+[2023-02-17 11:59:00 +0300] [136265] [INFO] Worker exiting (pid: 136265)
+[2023-02-17 11:59:00 +0300] [136263] [INFO] Worker exiting (pid: 136263)
+[2023-02-17 11:59:00 +0300] [136261] [INFO] Worker exiting (pid: 136261)
+[2023-02-17 11:59:00 +0300] [136264] [INFO] Application shutdown complete.
+[2023-02-17 11:59:00 +0300] [136264] [INFO] Finished server process [136264]
+[2023-02-17 11:59:00 +0300] [136264] [INFO] Worker exiting (pid: 136264)
