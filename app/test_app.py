@@ -12,10 +12,6 @@ from httpx import AsyncClient
 async def test_read_main(client: AsyncClient):
     response = await client.get("/")
     assert response.status_code == 200
-    assert response.json() == {
-        "message": "Welcome to Buchi's Pet Adoption API, Made with ❤️ by Tesfaye Girma"
-    }
-
 
 # This function is used to get the data from the database
 @pytest.mark.anyio

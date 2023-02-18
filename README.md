@@ -19,6 +19,10 @@ For mongodb :
 
 `MONGO_INITDB_DATABASE` = " "
 
+`MONGO_INITDB_ROOT_USERNAME` = " "
+
+`MONGO_INITDB_ROOT_PASSWORD` = " "
+
 For petfinder api :
 
 
@@ -26,9 +30,6 @@ For petfinder api :
 
 `SECRET` = " "
 
-`ACCESS_TOKEN` = " "
-
-`EXPIRES_IN` = " "
 
 ## Run Locally
 
@@ -41,7 +42,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd buchi_app_fastapi_python
 ```
 
 docker compose
@@ -53,6 +54,23 @@ docker compose
 Start the server
 
 ```bash
-  http://localhost:8080/docs
+  http://localhost:8000/docs
 ```
+
+## Deployment on Render (https://render.com/) Here is the link to the deployed app on render :
+
+https://buchi-app-fastapi.onrender.com/docs
+
+
+## Run Tests (pytest) 
+
+```bash
+  python -m pytest -vv or python3 -m pytest -vv
+```
+
+
+## In pet finder api, If The Access Token Is Expired, The App Will Automatically Refresh The Token And Continue To Work. without any interruption. 
+
+
+
 

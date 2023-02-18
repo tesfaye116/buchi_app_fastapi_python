@@ -14,7 +14,6 @@ import requests
 from app.models.Pet import PetSchema
 
 
-
 router = APIRouter()
 
 settings = Settings()
@@ -52,10 +51,15 @@ def get_access_token():
 
 
 # get the access token from the petfinder api
-get_access_token()
-
+try:
+    get_access_token()
+except:
+    print("Error getting access token from petfinder api")
+    access_token_list.append("")
 
 # create pet route with form data and file upload
+
+
 @router.post("", response_model=PetSchema)
 async def create_pet(
     type: str = Form(...),
